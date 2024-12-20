@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 from dataclasses import dataclass
 from src.logger import logging
+from src.components.data_transformation import DataTransformation 
 
 @dataclass
 class DataIngestionConfig:
@@ -56,3 +57,8 @@ if __name__ == "__main__":
     train_data_path,test_data_path = obj.initiate_data_ingestion()
     print(train_data_path)
     print(test_data_path)
+    
+    data_transformation = DataTransformation()
+    X_train_data,y_train_data,X_test_data,y_test_data,_ = data_transformation.initiate_data_transformation(train_data_path,test_data_path)
+    
+    
