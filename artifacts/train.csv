@@ -1,4 +1,4 @@
-Car Brand,Model,Year,Mileage,Fuel Type,Engine Size,Transmission,Body Type,Color,Owner History,Price,Age
+Make,Model,Year,Mileage,Fuel_Type,Engine_Size,Transmission,Body_Type,Color,Owner_History,Price,Age
 mercedes,model c,2021,78051,diesel,3.6,manual,truck,white,third owner,25264.53,2
 volkswagen,model a,2021,158290,diesel,3.0,automatic,hatchback,white,first owner,17648.16,2
 kia,model a,2013,290316,electric,2.9,cvt,coupe,gray,first owner,15263.08,10

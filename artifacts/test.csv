@@ -1,4 +1,4 @@
-Car Brand,Model,Year,Mileage,Fuel Type,Engine Size,Transmission,Body Type,Color,Owner History,Price,Age
+Make,Model,Year,Mileage,Fuel_Type,Engine_Size,Transmission,Body_Type,Color,Owner_History,Price,Age
 ford,model a,2007,279121,hybrid,2.1,manual,hatchback,blue,first owner,9572.5,16
 ford,model a,2014,134897,diesel,1.3,manual,coupe,white,third owner,17058.4,9
 mercedes,model e,2005,25153,electric,2.5,manual,truck,black,second owner,18056.93,18

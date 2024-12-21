@@ -1,4 +1,4 @@
-Car Brand,Model,Year,Mileage,Fuel Type,Engine Size,Transmission,Body Type,Color,Owner History,Price,Age
+Make,Model,Year,Mileage,Fuel_Type,Engine_Size,Transmission,Body_Type,Color,Owner_History,Price,Age
 nissan,model d,2006,244586,diesel,1.1,automatic,coupe,red,third owner,6501.73,17
 honda,model d,2006,89556,electric,4.4,automatic,coupe,gray,second owner,15860.51,17
 ford,model e,2007,258273,hybrid,1.4,manual,suv,black,first owner,8136.09,16
