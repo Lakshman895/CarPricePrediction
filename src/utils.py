@@ -32,7 +32,7 @@ def evaluate_model(X_train,y_train,X_test,y_test, models,params):
             logging.info(f'Performing the gridsearch:{model_name}')
             
             gs = GridSearchCV(model, param, cv=5, scoring='r2')
-            gs.fit(X_train,y_test)
+            gs.fit(X_train,y_train)
             
             model.set_params(**gs.best_params_)
             model.fit(X_train,y_train)
