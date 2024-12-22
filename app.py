@@ -1,7 +1,6 @@
 from flask import Flask, request, render_template, session
 import numpy as np
 import pandas as pd
-import os
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
 application = Flask(__name__)
@@ -17,16 +16,16 @@ def predict_datapoint():
         return render_template('home.html', results=None)
     else:
         data = CustomData(
-            Make=request.form.get('Make'),
-            Model=request.form.get('Model'),
+            Make=request.form.get('Make').lower(),
+            Model=request.form.get('Model').lower(),
             Year=int(request.form.get('Year')),
             Mileage=int(request.form.get('Mileage')),
-            Fuel_Type=request.form.get('Fuel_Type'),
+            Fuel_Type=request.form.get('Fuel_Type').lower(),
             Engine_Size=float(request.form.get('Engine_Size')),
-            Transmission=request.form.get('Transmission'),
-            Body_Type=request.form.get('Body_Type'),
-            Color=request.form.get('Color'),
-            Owner_History=request.form.get('Owner_History'),
+            Transmission=request.form.get('Transmission').lower(),
+            Body_Type=request.form.get('Body_Type').lower(),
+            Color=request.form.get('Color').lower(),
+            Owner_History=request.form.get('Owner_History').lower(),
             Age=int(request.form.get('Age')),
         )
         
@@ -42,6 +41,6 @@ def predict_datapoint():
         return render_template('home.html', results=results[0])
 
 if __name__ == "__main__":
-    #app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0")
     #app.run(host="0.0.0.0", debug=True)
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)), debug=True)
+    #app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)), debug=True)
