@@ -1,4 +1,4 @@
-Car Brand,Model,Year,Mileage,Fuel Type,Engine Size,Transmission,Body Type,Color,Owner History,Price,Age
+Make,Model,Year,Mileage,Fuel_Type,Engine_Size,Transmission,Body_Type,Color,Owner_History,Price,Age
 nissan,model d,-0.7967319467527691,1.079847584644146,diesel,-1.6221131466229999,automatic,coupe,red,third owner,6501.73,0.7967319467527562
 honda,model d,-0.7967319467527691,-0.7684773151168842,electric,1.2348630142693233,automatic,coupe,gray,second owner,15860.51,0.7967319467527562
 ford,model e,-0.6525270695124513,1.243029052121597,hybrid,-1.3623880410873344,manual,suv,black,first owner,8136.09,0.6525270695124383
