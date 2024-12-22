@@ -30,8 +30,8 @@ class DataTransformation:
         This fuction is responsible for data transformation
         '''
         try:
-            numerical_columns = ['Year', 'Mileage', 'Engine Size', 'Age']
-            categorical_columns = ['Car Brand', 'Model', 'Fuel Type', 'Transmission', 'Body Type', 'Color', 'Owner History']
+            numerical_columns = ['Year', 'Mileage', 'Engine_Size', 'Age']
+            categorical_columns = ['Make', 'Model', 'Fuel_Type', 'Transmission', 'Body_Type', 'Color', 'Owner_History']
             
             num_pipeline = Pipeline(
                 steps=[
@@ -43,7 +43,7 @@ class DataTransformation:
             cat_pipeline = Pipeline(
                 steps=[
                     ("impute",SimpleImputer(strategy="most_frequent")),
-                    ("one_hot_encoder", OneHotEncoder())
+                    ("one_hot_encoder", OneHotEncoder(handle_unknown="ignore"))
                 ]
             )
             

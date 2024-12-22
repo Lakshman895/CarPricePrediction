@@ -16,6 +16,7 @@ class PredictPipeline:
         # Loading the model and preprocessor
         model = load_object(file_path=model_path)
         print("The model is : ", model)
+        print('Features: ', features)
         
         preprocessor = load_object(file_path=preprocessor_path)
         print("After Loading")
