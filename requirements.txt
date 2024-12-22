@@ -6,5 +6,5 @@ plotly
 scikit-learn
 xgboost
 Flask
-
+gunicorn
 #-e .
