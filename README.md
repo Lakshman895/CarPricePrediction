@@ -47,7 +47,7 @@ If you would like to contribute to this dataset, please submit a pull request wi
 This dataset is open-source and can be used for educational and research purposes.
 
 ## App Link
-[Car Price Prediction](https://carpriceprediction-1-y02c.onrender.com/predictdata)
+[Car Price Prediction](https://carpriceprediction-1-y02c.onrender.com/)
 
 ## Contact
 
